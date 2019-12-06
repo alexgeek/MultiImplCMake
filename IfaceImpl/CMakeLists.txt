@@ -2,9 +2,6 @@ project("IfaceImpl" VERSION 1.0.0)
 
 add_library(${PROJECT_NAME} INTERFACE)
 
-include(GNUInstallDirs)
-include(CTest)
-
 target_sources(${PROJECT_NAME} 
 	INTERFACE $<BUILD_INTERFACE:${${PROJECT_NAME}_SOURCE_DIR}/Public>/InterfaceImpl.cpp
 )

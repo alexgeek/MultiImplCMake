@@ -1,3 +1,5 @@
+include(GNUInstallDirs)
+
 function(ExportTarget TARGET_TO_EXPORT)
 	install(TARGETS ${TARGET_TO_EXPORT}
 		EXPORT ${TARGET_TO_EXPORT}_Targets

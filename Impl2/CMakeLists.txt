@@ -2,8 +2,6 @@ project("Impl2" VERSION 1.0.0)
 
 add_library(${PROJECT_NAME} SHARED ${PROJECT_SOURCE_DIR}/Private/Impl2.cpp)
 
-include(GNUInstallDirs)
-
 target_compile_definitions(${PROJECT_NAME} PRIVATE INTERFACE_EXPORTS)
 target_link_libraries(${PROJECT_NAME} Iface IfaceImpl)
 
