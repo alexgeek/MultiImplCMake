@@ -2,6 +2,8 @@
 
 project ("MultiImpl")
 
+include("cmake/Exporting.cmake")
+
 # Include sub-projects.
 add_subdirectory ("Iface")
 add_subdirectory ("IfaceImpl")
